@@ -1,0 +1,66 @@
+{
+    "name": "ActionsSousMarin",
+    "maps": [
+        {
+            "name": "Sous_marin",
+            "id": "b835a841-2069-4f81-b529-64dd0bfa5772",
+            "actions": [
+                {
+                    "name": "Avance",
+                    "type": "Button",
+                    "id": "de77b532-7bde-42d1-bc19-ebfa9b98ed9a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Recule",
+                    "type": "Button",
+                    "id": "7394188a-640c-448f-93d4-c17e40a292f7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6687f576-5ce7-4901-9a31-5b1f191f0376",
+                    "path": "<Keyboard>/w",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "Avance",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7db5c53d-471f-46d1-aac2-2a3a3aa3dd5a",
+                    "path": "<Keyboard>/s",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "Recule",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
