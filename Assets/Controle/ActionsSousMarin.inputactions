@@ -7,17 +7,26 @@
             "actions": [
                 {
                     "name": "Avance",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "de77b532-7bde-42d1-bc19-ebfa9b98ed9a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Monter",
+                    "type": "Button",
+                    "id": "7394188a-640c-448f-93d4-c17e40a292f7",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Hold",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Recule",
+                    "name": "Descendre",
                     "type": "Button",
-                    "id": "7394188a-640c-448f-93d4-c17e40a292f7",
+                    "id": "c356f8cc-6f88-4cce-9c95-a5c74fc1d681",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -26,24 +35,79 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "6687f576-5ce7-4901-9a31-5b1f191f0376",
+                    "name": "2D Vector",
+                    "id": "db067702-f58c-4744-9185-e0aa086bd901",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Avance",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "aa0a74a8-159e-4e36-a827-281ed73acacc",
                     "path": "<Keyboard>/w",
-                    "interactions": "Press(behavior=1)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "keyboard",
                     "action": "Avance",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "e831b9c7-c6fa-44db-9802-b0f08d8c5293",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "Avance",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Left",
+                    "id": "e95c81e6-b90a-4b28-b3ea-322f469e3b93",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Avance",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "82172303-e96a-4641-a8a4-88c3326646fa",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Avance",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "732cc8a3-dab1-45db-a7f3-848db75ccb37",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "Monter",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "7db5c53d-471f-46d1-aac2-2a3a3aa3dd5a",
-                    "path": "<Keyboard>/s",
-                    "interactions": "Press",
+                    "id": "312c632a-7d7f-4215-b35c-2217f83a4920",
+                    "path": "<Keyboard>/q",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "keyboard",
-                    "action": "Recule",
+                    "action": "Descendre",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
