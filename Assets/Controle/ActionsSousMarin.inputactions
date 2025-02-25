@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Accelere",
+                    "type": "Button",
+                    "id": "415b1ab9-10ea-42fb-b653-d70fa4c0b441",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -108,6 +117,17 @@
                     "processors": "",
                     "groups": "keyboard",
                     "action": "Descendre",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f58f856-0307-47b6-ba66-feb4f2f4b4d8",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "Accelere",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

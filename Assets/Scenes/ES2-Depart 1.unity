@@ -1839,8 +1839,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4ae72539877d141b8dbd22641b51ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vitessePromenade: 5
-  _vitesseVerticale: 5
+  _vitessePromenade: 3
+  _vitesseVerticale: 3
+  _boostPromenade: 6
+  _boostVerticale: 6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
