@@ -1749,6 +1749,11 @@ PrefabInstance:
       propertyPath: m_Bones.Array.data[1]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5784706502144136851, guid: 20c0aa25022fd474ebac164d517acaa3,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8298684462619277302, guid: 20c0aa25022fd474ebac164d517acaa3,
         type: 3}
       propertyPath: m_Name

@@ -21,8 +21,9 @@ public class SousmarinAvance : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
-
+        
        
+
         _vitesseActuellePromenade = _vitessePromenade;
         _vitesseActuelleVerticale = _vitesseVerticale;
     }
@@ -34,6 +35,7 @@ public class SousmarinAvance : MonoBehaviour
         Vector2 input = directionBase.Get<Vector2>();
         directionInput.z = input.y * _vitessePromenade;
         _animator.SetFloat("DeplacementAvance", directionInput.magnitude);
+     
     }
 
    
@@ -91,6 +93,7 @@ public class SousmarinAvance : MonoBehaviour
     {
         Vector3 mouvement = new Vector3(0, directionInput.y * _vitesseActuelleVerticale, directionInput.z * _vitesseActuellePromenade) * Time.deltaTime;
         _rb.MovePosition(_rb.position + mouvement);
+     
     }
 
 }
