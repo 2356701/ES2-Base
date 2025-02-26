@@ -77,6 +77,7 @@ public class SousmarinAvance : MonoBehaviour
             Debug.Log("presse");
             _vitesseActuellePromenade = _boostPromenade;
             _vitesseActuelleVerticale = _boostVerticale;
+            
         }
         else
         {
